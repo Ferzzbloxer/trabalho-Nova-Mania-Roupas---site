@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrar — Loja de Roupas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card pagina-secundaria">
+
+    <header class="header">
+      <button class="btn-contorno" data-href="index.html">&larr; Voltar</button>
+    </header>
+
+    <div class="conteudo-simples">
+      <h1>Entrar</h1>
+      <p class="subtexto">Acesse sua conta para acompanhar pedidos e favoritos.</p>
+
+      <form class="formulario" id="form-entrar">
+        <label>
+          E-mail
+          <input type="email" name="email" placeholder="voce@email.com" required>
+        </label>
+        <label>
+          Senha
+          <input type="password" name="senha" placeholder="••••••••" required>
+        </label>
+        <button type="submit" class="btn-amarelo">Entrar</button>
+      </form>
+
+      <p class="rodape-form">Ainda não tem conta? <a href="criar-conta.html">Criar conta</a></p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Demonstração: não há backend conectado ainda.
+    document.getElementById('form-entrar').addEventListener('submit', (evento) => {
+      evento.preventDefault();
+      alert('Esta é uma demonstração — o login ainda não está conectado a um servidor.');
+    });
+  </script>
+</body>
+</html>

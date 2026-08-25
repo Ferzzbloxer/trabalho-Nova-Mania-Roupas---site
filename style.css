@@ -252,6 +252,101 @@ body {
   transform: scale(1.2) rotate(90deg);
 }
 
+/* Botões usados como links (páginas secundárias) */
+a.btn-amarelo,
+a.btn-contorno {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Páginas secundárias: Entrar, Criar conta, Carrinho, Produtos, Loja */
+.pagina-secundaria .header {
+  justify-content: flex-start;
+}
+
+.conteudo-simples {
+  padding: 48px 32px;
+  color: var(--branco);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.conteudo-simples h1 {
+  font-size: 22px;
+  color: var(--amarelo);
+}
+
+.conteudo-simples .subtexto {
+  font-size: 14px;
+  color: #b5b5b5;
+  max-width: 360px;
+}
+
+.formulario {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: left;
+  margin-top: 8px;
+}
+
+.formulario label {
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.formulario input {
+  background-color: #1a1a1a;
+  border: 2px solid var(--cinza-borda);
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: var(--branco);
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.formulario input:focus {
+  outline: none;
+  border-color: var(--verde-sidebar-hover);
+}
+
+.formulario button {
+  margin-top: 4px;
+  width: 100%;
+  border: none;
+}
+
+.rodape-form {
+  font-size: 13px;
+  color: #b5b5b5;
+}
+
+.rodape-form a {
+  color: var(--amarelo);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.rodape-form a:hover {
+  text-decoration: underline;
+}
+
+.icone-vazio {
+  width: 56px;
+  height: 56px;
+  color: var(--cinza-borda);
+}
+
 @media (max-width: 640px) {
   .corpo {
     flex-direction: column;

@@ -1,4 +1,11 @@
 
+// Navegação dos botões do topo (Produtos, Loja, Entrar, Criar conta e Carrinho)
+document.querySelectorAll('[data-href]').forEach((elemento) => {
+  elemento.addEventListener('click', () => {
+    window.location.href = elemento.dataset.href;
+  });
+});
+
 const botoesCategoria = document.querySelectorAll('.categoria');
 
 botoesCategoria.forEach((botao) => {
