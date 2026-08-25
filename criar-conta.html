@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criar conta — Loja de Roupas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card pagina-secundaria">
+
+    <header class="header">
+      <button class="btn-contorno" data-href="index.html">&larr; Voltar</button>
+    </header>
+
+    <div class="conteudo-simples">
+      <h1>Criar conta</h1>
+      <p class="subtexto">Crie sua conta para começar a comprar.</p>
+
+      <form class="formulario" id="form-criar-conta">
+        <label>
+          Nome
+          <input type="text" name="nome" placeholder="Seu nome" required>
+        </label>
+        <label>
+          E-mail
+          <input type="email" name="email" placeholder="voce@email.com" required>
+        </label>
+        <label>
+          Senha
+          <input type="password" name="senha" placeholder="••••••••" required>
+        </label>
+        <label>
+          Confirmar senha
+          <input type="password" name="confirmar-senha" placeholder="••••••••" required>
+        </label>
+        <button type="submit" class="btn-amarelo">Criar conta</button>
+      </form>
+
+      <p class="rodape-form">Já tem conta? <a href="entrar.html">Entrar</a></p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Demonstração: não há backend conectado ainda.
+    document.getElementById('form-criar-conta').addEventListener('submit', (evento) => {
+      evento.preventDefault();
+      alert('Esta é uma demonstração — o cadastro ainda não está conectado a um servidor.');
+    });
+  </script>
+</body>
+</html>
