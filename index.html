@@ -1,22 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Nova Mania Roupas</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <center><h1 id="title_index">Nova Mania Roupas</h1></center>
-            <nav class="navigation-bar">
-                <ul class="navigation-list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Produtos</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </nav>
-        </header>
-    </body>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja de Roupas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+
+    <header class="header">
+      <nav class="nav-esquerda">
+        <button class="btn-amarelo">Produtos</button>
+        <button class="btn-amarelo">Loja</button>
+      </nav>
+
+      <div class="nav-direita">
+        <button class="icone-carrinho" id="botao-carrinho" aria-label="Carrinho">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 8L4 4H2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6 8H21L18 16H8L6 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8 16L6.5 19H17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="9" cy="21" r="1.3" fill="currentColor"/>
+            <circle cx="16" cy="21" r="1.3" fill="currentColor"/>
+          </svg>
+          <span class="badge-carrinho" id="badge-carrinho">0</span>
+        </button>
+        <button class="btn-contorno">Entrar</button>
+        <button class="btn-amarelo">Criar conta</button>
+      </div>
+    </header>
+
+    <div class="corpo">
+
+      <aside class="sidebar">
+        <div class="categoria-titulo">Categorias</div>
+        <button class="categoria ativa" data-categoria="Camisas">Camisas</button>
+        <button class="categoria" data-categoria="Vestidos">Vestidos</button>
+        <button class="categoria" data-categoria="Calças">Calças</button>
+        <button class="categoria" data-categoria="Jaquetas">Jaquetas</button>
+        <button class="categoria" data-categoria="Saias">Saias</button>
+        <button class="categoria" data-categoria="Acessórios">Acessórios</button>
+      </aside>
+
+      <main class="grade-produtos" id="grade-produtos">
+        <div class="slot-produto">
+          <span class="slot-mais">+</span>
+        </div>
+        <div class="slot-produto">
+          <span class="slot-mais">+</span>
+        </div>
+        <div class="slot-produto">
+          <span class="slot-mais">+</span>
+        </div>
+        <div class="slot-produto">
+          <span class="slot-mais">+</span>
+        </div>
+      </main>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
